@@ -71,17 +71,13 @@ function contains(item, list, cb) {
   // Pass true to the callback if it is, otherwise pass false.
 }
 function contains(item, list, cb){
-  const inArray=true;
-    for (i=0;i < list.length;i++){
-      if (list[i]===item){
-        return cb(true);
-    }
-      return cb(false);
-  
-  };
-  return cb(inArray());
-};
-contains('Notebook',items,function(results){
+  let found= list.includes(item);
+  return cb(found)
+}
+contains('Notebook',items,(results)=>{
+  console.log(results);
+});
+contains('srs',items,(results)=>{
   console.log(results);
 });
 
