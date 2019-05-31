@@ -1,5 +1,19 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
+function gaming(){
+
+  let user1 = "Player 1";
+  console.log(`Waiting for ${user1} to ready up!!`);
+
+  function playing(){
+
+    let user2 = "Player 2";
+    console.log(`${user1} is facing off against ${user2}`);
+  }
+  playing()
+}
+
+gaming()
 
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
